@@ -10,8 +10,18 @@ $light: 300;
 $Arapey: 'Arapey', serif;
 $italic: 400i;
 
+// Color variables
+$primary: #FFFFFF;
+$secondary: #8C8C82;
+$accent: #95815B;
+$background: #050A0A;
+$navbar: #D7DCDC;
+
+// Structure variables
+
 
 body {
-  font-family: $Arapey;
-  font-weight: $italic;
+  background-color: $background;
+  color: $primary;
+  font-family: $Montserrat;
 }
