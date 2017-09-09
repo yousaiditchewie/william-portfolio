@@ -1,23 +1,22 @@
-// Typeface variables
+/* Typeface variables */
 
-// Primary, sans-serif
+/* Primary, sans-serif*/
 $Montserrat: 'Montserrat', sans-serif;
 $bold: 900;
 $medium: 500;
 $light: 300;
 
-// Secondary, serif
+/* Secondary, serif */
 $Arapey: 'Arapey', serif;
 $italic: 400i;
 
-// Color variables
+/* Color variables */
 $primary: #FFFFFF;
 $secondary: #8C8C82;
 $accent: #95815B;
 $background: #050A0A;
 $navbar: #D7DCDC;
 
-// Structure variables
 
 
 body {
@@ -30,14 +29,64 @@ body {
   position: absolute;
   width: 100%;
   height: 50px;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: $light;
+  letter-spacing: 2px;
   .navbar__brand {
     display: inline-block;
     float: left;
     padding: 15px 0 15px 30px;
-    font-size: 18px;
-    font-weight: $light;
-    line-height: 20px;
-    letter-spacing: 2px;
     color: $accent;
   }
+  .navbar__links {
+    position: fixed;
+    top: 15px;
+    right: 30px;
+    margin: 0;
+    height: 20px;
+    list-style-type: none;
+    li {
+      display: inline;
+      padding: 0 15px;
+      border-left: 1px solid $navbar;
+      &:first-child {
+        border-left: none;
+      }
+      a {
+        text-decoration: none;
+        color: $navbar;
+        font-size: 16px;
+        transition: color .25s;
+        &:hover {
+          color: $accent;
+        }
+      }
+    }
+  }
+}
+/* Material icon fonts */
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
 }

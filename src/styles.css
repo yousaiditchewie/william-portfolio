@@ -1,3 +1,7 @@
+/* Typeface variables */
+/* Primary, sans-serif*/
+/* Secondary, serif */
+/* Color variables */
 body {
   margin: 0;
   background-color: #050A0A;
@@ -7,15 +11,58 @@ body {
 #navbar {
   position: absolute;
   width: 100%;
-  height: 50px; }
+  height: 50px;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 300;
+  letter-spacing: 2px; }
   #navbar .navbar__brand {
     display: inline-block;
     float: left;
     padding: 15px 0 15px 30px;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 20px;
-    letter-spacing: 2px;
     color: #95815B; }
+  #navbar .navbar__links {
+    position: fixed;
+    top: 15px;
+    right: 30px;
+    margin: 0;
+    height: 20px;
+    list-style-type: none; }
+    #navbar .navbar__links li {
+      display: inline;
+      padding: 0 15px;
+      border-left: 1px solid #D7DCDC; }
+      #navbar .navbar__links li:first-child {
+        border-left: none; }
+      #navbar .navbar__links li a {
+        text-decoration: none;
+        color: #D7DCDC;
+        font-size: 16px;
+        transition: color .25s; }
+        #navbar .navbar__links li a:hover {
+          color: #95815B; }
+
+/* Material icon fonts */
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga'; }
 
 /*# sourceMappingURL=styles.css.map */
