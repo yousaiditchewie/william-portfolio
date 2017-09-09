@@ -1,3 +1,17 @@
+// Typeface variables
+
+// Primary, sans-serif
+$Montserrat: 'Montserrat', sans-serif;
+$bold: 900;
+$medium: 500;
+$light: 300;
+
+// Secondary, serif
+$Arapey: 'Arapey', serif;
+$italic: 400i;
+
+
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: $Arapey;
+  font-weight: $italic;
 }
