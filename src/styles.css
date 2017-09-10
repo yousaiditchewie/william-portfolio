@@ -8,6 +8,9 @@ body {
   color: #FFFFFF;
   font-family: "Montserrat", sans-serif; }
 
+#mobile-nav {
+  display: none; }
+
 #navbar {
   position: absolute;
   width: 100%;
@@ -42,6 +45,22 @@ body {
         #navbar .navbar__links li a:hover {
           color: #95815B; }
 
+/* Media Queries and Responsive Styles */
+@media only screen and (max-width: 1000px) {
+  #navbar .navbar__brand {
+    display: none; } }
+@media only screen and (max-width: 768px) {
+  #navbar {
+    display: none; }
+
+  #mobile-nav {
+    display: block; }
+    #mobile-nav button {
+      color: #95815B;
+      background: transparent; }
+      #mobile-nav button .material-icons {
+        transition: all .25s;
+        font-size: 35px; } }
 /* Material icon fonts */
 .material-icons {
   font-family: 'Material Icons';

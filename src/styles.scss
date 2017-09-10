@@ -25,6 +25,9 @@ body {
   color: $primary;
   font-family: $Montserrat;
 }
+#mobile-nav {
+  display: none;
+}
 #navbar {
   position: absolute;
   width: 100%;
@@ -61,6 +64,29 @@ body {
         &:hover {
           color: $accent;
         }
+      }
+    }
+  }
+}
+/* Media Queries and Responsive Styles */
+@media only screen and (max-width: 1000px) {
+  #navbar .navbar__brand {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #navbar {
+    display: none;
+  }
+  #mobile-nav {
+    display: block;
+    button {
+      color: $accent;
+      background: transparent;
+      .material-icons {
+        transition: all .25s;
+        font-size: 35px;
+
       }
     }
   }
