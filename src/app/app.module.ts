@@ -6,11 +6,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MdCardModule, MdButtonModule, MdButtonToggleModule, MdMenuModule } from '@angular/material';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MobileNavComponent } from './mobile-nav/mobile-nav.component';
+import { FullscreenVideoComponent } from './fullscreen-video/fullscreen-video.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    MobileNavComponent
+    MobileNavComponent,
+    FullscreenVideoComponent
   ],
   imports: [
     BrowserModule,
