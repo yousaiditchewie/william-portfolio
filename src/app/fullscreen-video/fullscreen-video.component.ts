@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./fullscreen-video.component.css']
 })
 export class FullscreenVideoComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit() {
