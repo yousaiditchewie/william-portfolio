@@ -1,13 +1,16 @@
-<div id="navbar">
+<nav id="navbar">
   <div class="navbar__brand">
     WILLIAM DUGAN
+  </div>
+  <div class="navbar__smallBrand">
+    WD
   </div>
   <ul class="navbar__links">
     <li *ngFor="let link of links">
       <a href="{{ link.href }}" target="{{ link.target }}">{{ link.name }}</a>
     </li>
   </ul>
-</div>
-<div id="mobile-nav">
+</nav>
+<nav id="mobile-nav">
   <mobile-nav></mobile-nav>
-</div>
+</nav>
