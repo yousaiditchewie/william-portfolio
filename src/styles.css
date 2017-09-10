@@ -54,13 +54,29 @@ body {
     display: none; }
 
   #mobile-nav {
-    display: block; }
+    padding-top: 15px;
+    display: block;
+    text-align: center; }
     #mobile-nav button {
       color: #95815B;
       background: transparent; }
       #mobile-nav button .material-icons {
         transition: all .25s;
         font-size: 35px; } }
+/* Mobile Nav corrective styles */
+.cdk-overlay-container .mat-menu-panel {
+  max-width: 100%; }
+  .cdk-overlay-container .mat-menu-panel button {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    background-color: transparent; }
+    .cdk-overlay-container .mat-menu-panel button a {
+      text-decoration: none;
+      color: #D7DCDC;
+      transition: all .25s; }
+
 /* Material icon fonts */
 .material-icons {
   font-family: 'Material Icons';

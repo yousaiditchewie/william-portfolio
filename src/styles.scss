@@ -79,7 +79,9 @@ body {
     display: none;
   }
   #mobile-nav {
+    padding-top: 15px;
     display: block;
+    text-align: center;
     button {
       color: $accent;
       background: transparent;
@@ -91,6 +93,23 @@ body {
     }
   }
 }
+
+/* Mobile Nav corrective styles */
+.cdk-overlay-container .mat-menu-panel {
+      max-width: 100%;
+      button {
+        text-align: center;
+        font-family: $Montserrat;
+        font-weight: $light;
+        font-size: 24px;
+        background-color: transparent;
+        a {
+          text-decoration: none;
+          color: $navbar;
+          transition: all .25s;
+        }
+      }
+    }
 /* Material icon fonts */
 .material-icons {
   font-family: 'Material Icons';
