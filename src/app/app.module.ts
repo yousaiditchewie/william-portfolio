@@ -7,12 +7,14 @@ import { MdCardModule, MdButtonModule, MdButtonToggleModule, MdMenuModule } from
 import { NavbarComponent } from './navbar/navbar.component';
 import { MobileNavComponent } from './mobile-nav/mobile-nav.component';
 import { FullscreenVideoComponent } from './fullscreen-video/fullscreen-video.component';
+import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     MobileNavComponent,
-    FullscreenVideoComponent
+    FullscreenVideoComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

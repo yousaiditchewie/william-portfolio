@@ -1,24 +1,27 @@
-/*****************
-Typeface variables
-******************/
+/*
+************
+UI variables
+************
+*/
 
-/* Primary, sans-serif*/
+/* Primary typeface, sans-serif*/
 $Montserrat: 'Montserrat', sans-serif;
 $bold: 900;
 $medium: 500;
 $light: 300;
 
-/* Secondary, serif */
+/* Secondary typeface, serif */
 $Arapey: 'Arapey', serif;
 $italic: 400i;
 
-/* Color variables */
+/* Theme color variables */
 $primary: #FFFFFF;
 $secondary: #8C8C82;
 $accent: #95815B;
 $background: #050A0A;
 $navbar: #D7DCDC;
 
+/* Body reset styles */
 body {
   margin: 0;
   background-color: $background;
@@ -26,9 +29,11 @@ body {
   font-family: $Montserrat;
 }
 
-/**********************
+/*
+***********************
 Navbar Component Styles
-***********************/
+***********************
+*/
 
 #navbar .navbar__smallBrand,
 #mobile-nav {
@@ -81,6 +86,7 @@ Navbar Component Styles
     }
   }
 }
+
 /* Navbar Media Queries and Responsive Styles */
 @media only screen and (max-width: 1000px) {
   #navbar .navbar__brand {
@@ -114,6 +120,7 @@ Navbar Component Styles
     }
   }
 }
+
 /* Mobile Nav corrective styles */
 .cdk-overlay-container .mat-menu-panel {
   max-width: 100%;
@@ -131,9 +138,11 @@ Navbar Component Styles
   }
 }
 
-/**********************
+/*
+***********************
 Fullscreen Video Styles
-**********************/
+***********************
+*/
 
 .iframe-wrapper {
   position: fixed;
@@ -144,19 +153,17 @@ Fullscreen Video Styles
   z-index: -100;
   pointer-events: none;
   overflow: hidden;
-}
-/* Make the iframe keep an aspect ratio, and
-position it in the middle of its parent wrapper*/
-.iframe-wrapper iframe {
-  width: 100vw;
-  height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
-  min-height: 100vh;
-  min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -10;
+  iframe {
+    width: 100vw;
+    height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+    min-height: 100vh;
+    min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -10;
+  }
 }
 @media only screen and (max-width: 768px) {
   #fullscreenVideo {
@@ -164,9 +171,11 @@ position it in the middle of its parent wrapper*/
   }
 }
 
-/******************
+/*
+*******************
 Material icon fonts
-******************/
+*******************
+*/
 
 .material-icons {
   font-family: 'Material Icons';

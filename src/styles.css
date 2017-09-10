@@ -1,18 +1,23 @@
-/*****************
-Typeface variables
-******************/
-/* Primary, sans-serif*/
-/* Secondary, serif */
-/* Color variables */
+/*
+************
+UI variables
+************
+*/
+/* Primary typeface, sans-serif*/
+/* Secondary typeface, serif */
+/* Theme color variables */
+/* Body reset styles */
 body {
   margin: 0;
   background-color: #050A0A;
   color: #FFFFFF;
   font-family: "Montserrat", sans-serif; }
 
-/**********************
+/*
+***********************
 Navbar Component Styles
-***********************/
+***********************
+*/
 #navbar .navbar__smallBrand,
 #mobile-nav {
   display: none; }
@@ -95,9 +100,11 @@ Navbar Component Styles
       color: #D7DCDC;
       transition: all .25s; }
 
-/**********************
+/*
+***********************
 Fullscreen Video Styles
-**********************/
+***********************
+*/
 .iframe-wrapper {
   position: fixed;
   top: 0;
@@ -107,28 +114,27 @@ Fullscreen Video Styles
   z-index: -100;
   pointer-events: none;
   overflow: hidden; }
-
-/* Make the iframe keep an aspect ratio, and
-position it in the middle of its parent wrapper*/
-.iframe-wrapper iframe {
-  width: 100vw;
-  height: 56.25vw;
-  /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
-  min-height: 100vh;
-  min-width: 177.77vh;
-  /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -10; }
+  .iframe-wrapper iframe {
+    width: 100vw;
+    height: 56.25vw;
+    /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+    min-height: 100vh;
+    min-width: 177.77vh;
+    /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -10; }
 
 @media only screen and (max-width: 768px) {
   #fullscreenVideo {
     display: none; } }
-/******************
+/*
+*******************
 Material icon fonts
-******************/
+*******************
+*/
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
