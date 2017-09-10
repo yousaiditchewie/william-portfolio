@@ -1,4 +1,6 @@
-/* Typeface variables */
+/*****************
+Typeface variables
+******************/
 /* Primary, sans-serif*/
 /* Secondary, serif */
 /* Color variables */
@@ -8,7 +10,9 @@ body {
   color: #FFFFFF;
   font-family: "Montserrat", sans-serif; }
 
-/* Navbar Component Styles */
+/**********************
+Navbar Component Styles
+***********************/
 #navbar .navbar__smallBrand,
 #mobile-nav {
   display: none; }
@@ -53,7 +57,7 @@ body {
         #navbar .navbar__links li a:hover {
           color: #95815B; }
 
-/* Media Queries and Responsive Styles */
+/* Navbar Media Queries and Responsive Styles */
 @media only screen and (max-width: 1000px) {
   #navbar .navbar__brand {
     display: none; }
@@ -91,7 +95,9 @@ body {
       color: #D7DCDC;
       transition: all .25s; }
 
-/* Fullscreen Video Styles */
+/**********************
+Fullscreen Video Styles
+**********************/
 .iframe-wrapper {
   position: fixed;
   top: 0;
@@ -120,7 +126,9 @@ position it in the middle of its parent wrapper*/
 @media only screen and (max-width: 768px) {
   #fullscreenVideo {
     display: none; } }
-/* Material icon fonts */
+/******************
+Material icon fonts
+******************/
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;

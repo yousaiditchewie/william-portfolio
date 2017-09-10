@@ -1,4 +1,6 @@
-/* Typeface variables */
+/*****************
+Typeface variables
+******************/
 
 /* Primary, sans-serif*/
 $Montserrat: 'Montserrat', sans-serif;
@@ -17,8 +19,6 @@ $accent: #95815B;
 $background: #050A0A;
 $navbar: #D7DCDC;
 
-
-
 body {
   margin: 0;
   background-color: $background;
@@ -26,7 +26,10 @@ body {
   font-family: $Montserrat;
 }
 
-/* Navbar Component Styles */
+/**********************
+Navbar Component Styles
+***********************/
+
 #navbar .navbar__smallBrand,
 #mobile-nav {
   display: none;
@@ -78,7 +81,7 @@ body {
     }
   }
 }
-/* Media Queries and Responsive Styles */
+/* Navbar Media Queries and Responsive Styles */
 @media only screen and (max-width: 1000px) {
   #navbar .navbar__brand {
     display: none;
@@ -127,7 +130,11 @@ body {
     }
   }
 }
-/* Fullscreen Video Styles */
+
+/**********************
+Fullscreen Video Styles
+**********************/
+
 .iframe-wrapper {
   position: fixed;
   top: 0;
@@ -138,10 +145,8 @@ body {
   pointer-events: none;
   overflow: hidden;
 }
-
 /* Make the iframe keep an aspect ratio, and
 position it in the middle of its parent wrapper*/
-
 .iframe-wrapper iframe {
   width: 100vw;
   height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
@@ -158,7 +163,11 @@ position it in the middle of its parent wrapper*/
     display: none;
   }
 }
-/* Material icon fonts */
+
+/******************
+Material icon fonts
+******************/
+
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -171,15 +180,12 @@ position it in the middle of its parent wrapper*/
   word-wrap: normal;
   white-space: nowrap;
   direction: ltr;
-
   /* Support for all WebKit browsers. */
   -webkit-font-smoothing: antialiased;
   /* Support for Safari and Chrome. */
   text-rendering: optimizeLegibility;
-
   /* Support for Firefox. */
   -moz-osx-font-smoothing: grayscale;
-
   /* Support for IE. */
   font-feature-settings: 'liga';
 }
