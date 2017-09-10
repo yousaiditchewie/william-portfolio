@@ -25,6 +25,8 @@ body {
   color: $primary;
   font-family: $Montserrat;
 }
+
+/* Navbar Component Styles */
 #navbar .navbar__smallBrand,
 #mobile-nav {
   display: none;
@@ -37,6 +39,7 @@ body {
   line-height: 20px;
   font-weight: $light;
   letter-spacing: 2px;
+  background-color: $background;
   .navbar__brand {
     display: inline-block;
     float: left;
@@ -108,23 +111,48 @@ body {
     }
   }
 }
-
 /* Mobile Nav corrective styles */
 .cdk-overlay-container .mat-menu-panel {
-      max-width: 100%;
-      button {
-        text-align: center;
-        font-family: $Montserrat;
-        font-weight: $light;
-        font-size: 24px;
-        background-color: transparent;
-        a {
-          text-decoration: none;
-          color: $navbar;
-          transition: all .25s;
-        }
-      }
+  max-width: 100%;
+  button {
+    text-align: center;
+    font-family: $Montserrat;
+    font-weight: $light;
+    font-size: 24px;
+    background-color: transparent;
+    a {
+      text-decoration: none;
+      color: $navbar;
+      transition: all .25s;
     }
+  }
+}
+/* Fullscreen Video Styles */
+.iframe-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Make the iframe keep an aspect ratio, and
+position it in the middle of its parent wrapper*/
+
+.iframe-wrapper iframe {
+  width: 100vw;
+  height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+  min-height: 100vh;
+  min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -10;
+}
 /* Material icon fonts */
 .material-icons {
   font-family: 'Material Icons';
