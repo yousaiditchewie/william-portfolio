@@ -8,13 +8,15 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MobileNavComponent } from './mobile-nav/mobile-nav.component';
 import { FullscreenVideoComponent } from './fullscreen-video/fullscreen-video.component';
 import { HomeComponent } from './home/home.component';
+import { HomeContentComponent } from './home-content/home-content.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     MobileNavComponent,
     FullscreenVideoComponent,
-    HomeComponent
+    HomeComponent,
+    HomeContentComponent
   ],
   imports: [
     BrowserModule,
