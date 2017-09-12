@@ -139,13 +139,14 @@ Navbar Component Styles
 }
 
 /*
-***********************
-Fullscreen Video Styles
-***********************
+*******************
+Home section styles
+*******************
 */
 
-.iframe-wrapper {
-  position: fixed;
+/* Fullscreen video */
+#home .iframe-wrapper {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -158,7 +159,7 @@ Fullscreen Video Styles
     height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
     min-height: 100vh;
     min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -168,6 +169,29 @@ Fullscreen Video Styles
 @media only screen and (max-width: 768px) {
   #fullscreenVideo {
     display: none;
+  }
+}
+
+/* Home section content */
+
+#home {
+  text-align: center;
+  h1 {
+    font-size: 35px;
+  }
+  h3 {
+    font-family: $Arapey;
+    font-size: 26px;
+  }
+  .home__content {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1; /* Maintains clickability of navbar */
+  }
+  .home__container {
+    margin: 45vh auto 0 auto;
   }
 }
 
