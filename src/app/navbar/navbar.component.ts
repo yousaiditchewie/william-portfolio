@@ -9,7 +9,7 @@ export class NavbarComponent implements OnInit {
   links = [
     {
       name: 'FEATURE FILMS',
-      href: '#',
+      href: '#feature-films',
       target: ''
     },
     {

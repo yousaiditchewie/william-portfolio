@@ -30,6 +30,35 @@ body {
 }
 
 /*
+***************************
+UI component helper classes
+***************************
+*/
+.section-separator {
+  position: absolute;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: $background;
+}
+.section-title {
+  display: inline-block;
+  float: left;
+  padding: 15px 0 15px 30px;
+  color: $accent;
+  font-weight: $light;
+  letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .section-title {
+    display: none;
+  }
+}
+
+/*
 ***********************
 Navbar Component Styles
 ***********************
@@ -48,12 +77,6 @@ Navbar Component Styles
   font-weight: $light;
   letter-spacing: 2px;
   background-color: $background;
-  .navbar__brand {
-    display: inline-block;
-    float: left;
-    padding: 15px 0 15px 30px;
-    color: $accent;
-  }
   .navbar__smallBrand {
     float: left;
     padding: 15px 0 15px 30px;
@@ -95,9 +118,7 @@ Navbar Component Styles
 }
 /* Navbar Media Queries and Responsive Styles */
 @media only screen and (max-width: 1000px) {
-  #navbar .navbar__brand {
-    display: none;
-  }
+
   #navbar .navbar__smallBrand {
     display: inline-block;
   }
@@ -213,15 +234,22 @@ Feature films styles
 #feature-films {
   position: relative;
   top: 100vh;
-  height: calc(100vh - 150px);
+  height: 100vh;
   width: 100vw;
-  padding: 150px 0 0 0;
+  padding: 0;
   .feature-films__container {
-    width: 70%;
-    margin: 0 auto;
-    md-grid-tile {
-      width: 90%;
-      background-color: blue;
+    position: absolute;
+    top: 50px;
+    height: calc(100vh - 50px);
+    width: 100vw;
+    margin: 0;
+    md-grid-list {
+      width: 80%;
+      padding: 0;
+      margin: 100px auto 0 auto;
+      md-grid-tile {
+        background-color: blue;
+      }
     }
   }
 }

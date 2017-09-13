@@ -10,7 +10,7 @@ export class MobileNavComponent implements OnInit {
   links = [
     {
       name: 'FEATURE FILMS',
-      href: '#',
+      href: '#feature-films',
       target: ''
     },
     {
