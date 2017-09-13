@@ -15,6 +15,7 @@ import { FullscreenVideoComponent } from './fullscreen-video/fullscreen-video.co
 import { HomeComponent } from './home/home.component';
 import { HomeContentComponent } from './home-content/home-content.component';
 import { FeatureFilmsComponent } from './feature-films/feature-films.component';
+import { ShortFilmsComponent } from './short-films/short-films.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +24,8 @@ import { FeatureFilmsComponent } from './feature-films/feature-films.component';
     FullscreenVideoComponent,
     HomeComponent,
     HomeContentComponent,
-    FeatureFilmsComponent
+    FeatureFilmsComponent,
+    ShortFilmsComponent
   ],
   imports: [
     BrowserModule,

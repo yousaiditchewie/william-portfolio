@@ -14,7 +14,7 @@ export class NavbarComponent implements OnInit {
     },
     {
       name: 'SHORT FILMS',
-      href: '#',
+      href: '#short-films',
       target: ''
     },
     {

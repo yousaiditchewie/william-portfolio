@@ -15,7 +15,7 @@ export class MobileNavComponent implements OnInit {
     },
     {
       name: 'SHORT FILMS',
-      href: '#',
+      href: '#short-films',
       target: ''
     },
     {
