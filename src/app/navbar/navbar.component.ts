@@ -19,7 +19,7 @@ export class NavbarComponent implements OnInit {
     },
     {
       name: 'MUSIC VIDEOS',
-      href: '#',
+      href: '#music-videos',
       target: ''
     },
     {

@@ -215,6 +215,42 @@ Short films styles
       background-color: blue; }
 
 /*
+********************
+Music videos styles
+********************
+*/
+#music-videos .music-videos__container {
+  top: 50px;
+  width: 100vw;
+  margin: 0; }
+  #music-videos .music-videos__container md-grid-list {
+    width: 80%;
+    padding: 0;
+    margin: 100px auto 0 auto; }
+    #music-videos .music-videos__container md-grid-list md-grid-tile {
+      background-color: blue; }
+
+/*
+*******************
+Footer styles
+*******************
+*/
+app-footer div {
+  height: 50px;
+  background-color: #95815B;
+  color: #050A0A;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1.5px; }
+  app-footer div a {
+    text-decoration: none;
+    color: #FFFFFF;
+    border-bottom: 1px solid transparent;
+    transition: all .25s; }
+    app-footer div a:hover {
+      border-bottom-color: #FFFFFF; }
+
+/*
 *******************
 Material icon fonts
 *******************
