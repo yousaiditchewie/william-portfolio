@@ -16,6 +16,10 @@ import { HomeComponent } from './home/home.component';
 import { HomeContentComponent } from './home-content/home-content.component';
 import { FeatureFilmsComponent } from './feature-films/feature-films.component';
 import { ShortFilmsComponent } from './short-films/short-films.component';
+import { MusicVideosComponent } from './music-videos/music-videos.component';
+import { BioComponent } from './bio/bio.component';
+import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +29,11 @@ import { ShortFilmsComponent } from './short-films/short-films.component';
     HomeComponent,
     HomeContentComponent,
     FeatureFilmsComponent,
-    ShortFilmsComponent
+    ShortFilmsComponent,
+    MusicVideosComponent,
+    BioComponent,
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
