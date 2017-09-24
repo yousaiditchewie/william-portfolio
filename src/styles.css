@@ -170,7 +170,13 @@ Home section styles
 
 @media only screen and (max-width: 768px) {
   #fullscreenVideo {
-    display: none; } }
+    display: none; }
+
+  #home {
+    background-image: url(./assets/1969girl3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; } }
 /* Home section content */
 #home {
   text-align: center; }
