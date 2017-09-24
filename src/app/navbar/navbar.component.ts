@@ -30,7 +30,7 @@ export class NavbarComponent implements OnInit {
     {
       name: 'CONTACT',
       href: 'mailto:hellowilliamdugan@icloud.com',
-      target: '_blank'
+      target: ''
     },
     {
       name: 'TOP',
