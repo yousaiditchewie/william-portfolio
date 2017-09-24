@@ -58,6 +58,13 @@ UI helper classes
   letter-spacing: 2px;
 }
 
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 @media only screen and (max-width: 1000px) {
   .section-title {
     display: none;
@@ -248,12 +255,12 @@ Feature films styles
     width: 100vw;
     margin: 0;
     md-grid-list {
-      max-width: 80%;
+      max-width: 70%;
       max-height: 40%;
       padding: 0;
       margin: 100px auto 0 auto;
       md-grid-tile {
-        background-color: blue;
+        background-color: $background;
       }
     }
   }
@@ -273,11 +280,11 @@ Short films styles
     width: 100vw;
     margin: 0;
     md-grid-list {
-      width: 80%;
+      width: 70%;
       padding: 0;
       margin: 100px auto 0 auto;
       md-grid-tile {
-        background-color: blue;
+        background-color: $background;
       }
     }
   }
@@ -288,19 +295,16 @@ Music videos styles
 ********************
 */
 #music-videos {
-  // top: 100vh;
   .music-videos__container {
-    // position: absolute;
     top: 50px;
-    // height: calc(100vh - 50px);
     width: 100vw;
     margin: 0;
     md-grid-list {
-      width: 80%;
+      width: 70%;
       padding: 0;
       margin: 100px auto 0 auto;
       md-grid-tile {
-        background-color: blue;
+        background-color: $background;
       }
     }
   }
