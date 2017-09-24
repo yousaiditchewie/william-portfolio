@@ -22,7 +22,7 @@ UI helper classes
   position: relative;
   width: 100vw;
   padding: 0;
-  border-bottom: 2.5px solid #8C8C82; }
+  border-bottom: 1px solid #95815B; }
 
 .section-separator {
   top: 0;
@@ -231,6 +231,26 @@ Music videos styles
       background-color: blue; }
 
 /*
+********************
+Bio styles
+********************
+*/
+#bio .bio__container {
+  background-image: url(./assets/head_shot.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 50px;
+  height: calc(100vh - 50px);
+  min-height: 600px;
+  width: 100vw;
+  margin: 0; }
+  #bio .bio__container .bio_text {
+    width: 50%;
+    padding-top: 30%;
+    padding-left: 50px; }
+
+/*
 *******************
 Footer styles
 *******************
@@ -241,14 +261,16 @@ app-footer div {
   color: #050A0A;
   text-align: center;
   line-height: 50px;
-  letter-spacing: 1.5px; }
+  letter-spacing: 1.5px;
+  font-family: "Arapey", serif;
+  font-weight: 400i; }
   app-footer div a {
     text-decoration: none;
-    color: #FFFFFF;
+    color: #D7DCDC;
     border-bottom: 1px solid transparent;
     transition: all .25s; }
     app-footer div a:hover {
-      border-bottom-color: #FFFFFF; }
+      border-bottom-color: #D7DCDC; }
 
 /*
 *******************

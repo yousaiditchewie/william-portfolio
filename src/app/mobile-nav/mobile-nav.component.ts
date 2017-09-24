@@ -20,18 +20,18 @@ export class MobileNavComponent implements OnInit {
     },
     {
       name: 'MUSIC VIDEOS',
-      href: '#',
+      href: '#music-videos',
       target: ''
     },
     {
       name: 'BIO',
-      href: '#',
+      href: '#bio',
       target: ''
     },
     {
       name: 'CONTACT',
-      href: '#',
-      target: ''
+      href: 'mailto:hellowilliamdugan@icloud.com',
+      target: '_blank'
     }
   ];
   constructor() { }

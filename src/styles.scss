@@ -38,7 +38,7 @@ UI helper classes
   position: relative;
   width: 100vw;
   padding: 0;
-  border-bottom: 2.5px solid $secondary;
+  border-bottom: 1px solid $accent;
 }
 .section-separator {
   // position: absolute;
@@ -306,6 +306,29 @@ Music videos styles
   }
 }
 /*
+********************
+Bio styles
+********************
+*/
+#bio {
+  .bio__container {
+    background-image: url(./assets/head_shot.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 50px;
+    height: calc(100vh - 50px);
+    min-height: 600px;
+    width: 100vw;
+    margin: 0;
+    .bio_text {
+      width: 50%;
+      padding-top: 30%;
+      padding-left: 50px;
+    }
+  }
+}
+/*
 *******************
 Footer styles
 *******************
@@ -318,13 +341,15 @@ app-footer {
     text-align: center;
     line-height: 50px;
     letter-spacing: 1.5px;
+    font-family: $Arapey;
+    font-weight: $italic;
     a {
       text-decoration: none;
-      color: $primary;
+      color: $navbar;
       border-bottom: 1px solid transparent;
       transition: all .25s;
       &:hover {
-        border-bottom-color: $primary;
+        border-bottom-color: $navbar;
       }
     }
   }

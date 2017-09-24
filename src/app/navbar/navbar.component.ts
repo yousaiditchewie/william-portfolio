@@ -24,11 +24,16 @@ export class NavbarComponent implements OnInit {
     },
     {
       name: 'BIO',
-      href: '#',
+      href: '#bio',
       target: ''
     },
     {
       name: 'CONTACT',
+      href: 'mailto:hellowilliamdugan@icloud.com',
+      target: '_blank'
+    },
+    {
+      name: 'TOP',
       href: '#',
       target: ''
     }
