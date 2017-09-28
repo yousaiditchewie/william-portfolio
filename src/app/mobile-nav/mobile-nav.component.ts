@@ -31,7 +31,12 @@ export class MobileNavComponent implements OnInit {
     {
       name: 'CONTACT',
       href: 'mailto:hellowilliamdugan@icloud.com',
-      target: '_blank'
+      target: ''
+    },
+    {
+      name: 'TOP',
+      href: '#',
+      target: ''
     }
   ];
   constructor() { }

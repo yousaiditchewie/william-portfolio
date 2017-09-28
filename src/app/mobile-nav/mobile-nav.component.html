@@ -3,6 +3,6 @@
 </button>
 <md-menu #menu="mdMenu">
   <button md-menu-item *ngFor="let link of links">
-    <a href="{{ link.href }}" target="{{ link.target }}"><span>{{ link.name }}</span></a>
+    <a href="{{ link.href }}" target="{{ link.target }}" (click)='toggleMenuIcon()'><span>{{ link.name }}</span></a>
   </button>
 </md-menu>
