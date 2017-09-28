@@ -98,9 +98,10 @@ Navbar Component Styles
 
 #cdk-overlay-0.cdk-overlay-pane {
   position: fixed;
-  top: 50px !important;
+  top: 60px !important;
   left: 0 !important;
-  width: 100%; }
+  width: 100%;
+  transition: background .25s; }
   #cdk-overlay-0.cdk-overlay-pane .mat-menu-ripple.mat-ripple {
     z-index: -99999; }
   #cdk-overlay-0.cdk-overlay-pane a {
@@ -121,11 +122,13 @@ Navbar Component Styles
 
   #mobile-nav {
     position: fixed;
-    width: 100%;
-    padding-top: 15px;
     display: block;
+    width: 100%;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.35);
     text-align: center;
-    z-index: 10; }
+    z-index: 10;
+    transition: padding-bottom .25s; }
     #mobile-nav button {
       color: #95815B;
       background: transparent; }
@@ -134,7 +137,8 @@ Navbar Component Styles
         font-size: 35px; } }
 /* Mobile Nav corrective styles */
 .cdk-overlay-container .mat-menu-panel {
-  max-width: 100%; }
+  max-width: 100%;
+  background: rgba(0, 0, 0, 0.35); }
   .cdk-overlay-container .mat-menu-panel button {
     text-align: center;
     font-family: "Montserrat", sans-serif;
@@ -269,6 +273,9 @@ Bio styles
     padding-top: 30%;
     padding-left: 50px; }
 
+@media only screen and (max-width: 768px) {
+  #bio .bio__container .bio_text {
+    padding-top: 89%; } }
 /*
 *******************
 Footer styles
